@@ -1,0 +1,21 @@
+%genericMessage {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: black 2px solid;
+    padding: 5px;
+    margin: 10px;
+}
+
+.success {
+    @extend %genericMessage;
+    background-color: green;
+}
+.warning {
+    @extend %genericMessage;
+    background-color: yellow;
+}
+.error {
+    @extend %genericMessage;
+    background-color: red;
+}
